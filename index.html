@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Redirecting...</title>
   <script>
-    // Get today + 7 days
+    // Get date 7 days from today
     const today = new Date();
     const targetDate = new Date(today);
     targetDate.setDate(today.getDate() + 7);
 
-    // Format YYYY-MM-DD
     const yyyy = targetDate.getFullYear();
     const mm = String(targetDate.getMonth() + 1).padStart(2, '0');
     const dd = String(targetDate.getDate()).padStart(2, '0');
     const dateString = `${yyyy}-${mm}-${dd}`;
 
-    // Build AirAsia one-way search URL (KUL to LGK)
-    const url = `https://www.airasia.com/flight/search/oneway/KUL/LGK/${dateString}/1/0/0`;
+    // New direct URL to search results
+    const url = `https://www.airasia.com/flights/booking/oneway/KUL/LGK/${dateString}/1/0/0/economy`;
 
     // Redirect
     window.location.href = url;
   </script>
 </head>
 <body>
-  <p>Redirecting you to AirAsia...</p>
+  <p>Taking you to flights from KL to Langkawi...</p>
 </body>
 </html>
+
 
