@@ -1,2 +1,2 @@
-# AirAsiaMOVE.coaster
+# AirAsiaMOVE
 AirAsiaMOVE Coaster QR
